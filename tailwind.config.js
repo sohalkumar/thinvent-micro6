@@ -8,9 +8,26 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-bg": "url('/images/hero_graphics.svg')",
+        "micro-6-intro": "url('/images/micro_6_intro.png')",
+        "micro-6-specs": "url('/images/micro_6_specs.png')",
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        caladea: ["var(--font-caladea)"],
+      },
+      colors: {
+        bgPurple: "#2C1F4A",
+        primaryPurple: "#9574EF",
+        secondaryPurple: "#B0B0D1",
+        darkPurple: "#38275F",
+        white: "#FFFFFF",
+        dark: "#222222",
+        gray: "#6F6F6F",
+        dividerPurple: "#DADAF7",
+      },
+      padding: {
+        "lg-x": "9.75rem",
       },
     },
   },
