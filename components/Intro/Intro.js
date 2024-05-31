@@ -1,6 +1,13 @@
+import { MotionDiv } from "../UI/Motion";
+
 export default function Intro() {
   return (
-    <div className="bg-micro-6-intro bg-cover bg-no-repeat lg:bg-cover px-4 py-[2.75rem] lg:px-lg-x lg:py-[16rem] w-screen">
+    <MotionDiv
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3 }}
+      className="bg-micro-6-intro bg-cover bg-no-repeat lg:bg-cover px-4 py-[2.75rem] lg:px-lg-x lg:py-[16rem] w-screen"
+    >
       <div className="text-center w-[45%]">
         <h3 className="font-caladea font-bold text-[25px] lg:text-[49px] tracking-[-0.5px]">
           Introducing
@@ -15,6 +22,6 @@ export default function Intro() {
           <span className="text-primaryPurple">low power</span>
         </p>
       </div>
-    </div>
+    </MotionDiv>
   );
 }

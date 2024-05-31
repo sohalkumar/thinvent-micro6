@@ -1,18 +1,31 @@
-import miro_6_specs from "@/public/images/micro_6_specs.png";
-import Image from "next/image";
+import { MotionBr, MotionH2, MotionSpan } from "../UI/Motion";
 import Description from "./Description";
 import Feature from "./Feature";
 
 export default function Specifications() {
   return (
     <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-0">
-      <div className="bg-micro-6-specs bg-contain lg:bg-cover bg-no-repeat  w-full ">
-        {/* <Image src={miro_6_specs} alt="Micro 6 image" /> */}
-      </div>
+      <div className="bg-micro-6-specs bg-contain lg:bg-cover bg-no-repeat  w-full "></div>
       <div className="bg-white px-4 py-8 lg:px-[6.75rem]">
         <h2 className="font-caladea font-bold text-[24px] lg:text-[49px] text-primaryPurple tracking-[-0.5px] w-fit">
-          Technical Specifications <br />
-          of Thinvent Micro 6
+          <MotionSpan
+            initial={{ x: "-100%",opacity:0 }}
+            whileInView={{ x: 0,opacity:1 }}
+            transition={{ duration: 1 }}
+            className="inline-block"
+          >
+            {" "}
+            Technical Specifications
+          </MotionSpan>{" "}
+          <br />
+          <MotionSpan
+            initial={{ x: "100%",opacity:0 }}
+            whileInView={{ x: 0,opacity:1 }}
+            transition={{ duration: 1 }}
+            className="inline-block"
+          >
+            of Thinvent Micro 6
+          </MotionSpan>
         </h2>
         <div className="border-primaryPurple border-t-[4px] mt-[24px] lg:mt-[45px] lg:mb-[1rem] w-[23%] lg:w-[30%]" />
         <div className="grid grid-cols-3 my-8">

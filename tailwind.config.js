@@ -29,6 +29,9 @@ module.exports = {
       padding: {
         "lg-x": "9.75rem",
       },
+      animation: {
+        "spin-slow": "spin 5s linear infinite",
+      },
     },
   },
   plugins: [],

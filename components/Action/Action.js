@@ -4,6 +4,7 @@ import artboard1 from "@/public/images/Artboard1.png";
 import artboard2 from "@/public/images/Artboard2.png";
 import artboard3 from "@/public/images/Artboard3.png";
 import Image from "next/image";
+import { MotionDiv } from "../UI/Motion";
 
 export default function Action() {
   return (
@@ -12,15 +13,15 @@ export default function Action() {
         Ideal for
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-[3rem] lg:gap-[6rem] my-[3rem] lg:my-[6rem]">
-        <div className="w-[50%]">
+        <MotionDiv whileHover={{ scale: 1.1 }} className="w-[50%]">
           <Image src={artboard1} alt="" />
-        </div>
-        <div className="w-[50%]">
+        </MotionDiv>
+        <MotionDiv whileHover={{ scale: 1.1 }} className="w-[50%]">
           <Image src={artboard2} alt="" />
-        </div>
-        <div className="w-[50%]">
+        </MotionDiv>
+        <MotionDiv whileHover={{ scale: 1.1 }} className="w-[50%]">
           <Image src={artboard3} alt="" />
-        </div>
+        </MotionDiv>
       </div>
 
       {/* bg graphics */}

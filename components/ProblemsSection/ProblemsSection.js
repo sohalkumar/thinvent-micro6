@@ -3,17 +3,27 @@ import dotted_pattern from "@/public/graphics/dotted_pattern.svg";
 import particle from "@/public/graphics/particle.svg";
 import pencil from "@/public/graphics/pencil.svg";
 import Image from "next/image";
+import { MotionDiv } from "../UI/Motion";
 
 export default function ProblemsSection() {
   return (
-    <div className="relative px-4 py-8 lg:px-lg-x lg:py-[3.75rem] overflow-x-clip">
+    <MotionDiv
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="relative px-4 py-8 lg:px-lg-x lg:py-[3.75rem] overflow-x-clip"
+    >
       <div className="border-[3px] border-primaryPurple rounded-[2rem] text-center py-[3.5rem]">
         <h3 className="font-medium text-[21.5px] lg:text-[43px] tracking-[-0.5px]">
           <span className="text-primaryPurple font-bold">Problems</span> in the
           Education Sector
         </h3>
         <div className="flex flex-col lg:flex-row justify-around align-middle gap-10 my-10 lg:mt-[75px] lg:mb-[99px]">
-          <div>
+          <MotionDiv
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+            exit={{ opacity: 0, scale: 0 }}
+          >
             <h2 className="font-caladea font-bold text-primaryPurple text-[2.25rem] lg:text-[5.5rem] tracking-[-0.5px]">
               66%
             </h2>
@@ -23,8 +33,12 @@ export default function ProblemsSection() {
                 Internet Access
               </span>
             </p>
-          </div>
-          <div>
+          </MotionDiv>
+          <MotionDiv
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+          >
             <h2 className="font-caladea font-bold text-primaryPurple text-[2.25rem] lg:text-[5.5rem] tracking-[-0.5px]">
               &gt;50%
             </h2>
@@ -34,8 +48,12 @@ export default function ProblemsSection() {
                 functional Computers
               </span>
             </p>
-          </div>
-          <div>
+          </MotionDiv>
+          <MotionDiv
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4 }}
+          >
             <h2 className="font-caladea font-bold text-primaryPurple text-[2.25rem] lg:text-[5.5rem] tracking-[-0.5px]">
               16%
             </h2>
@@ -45,13 +63,13 @@ export default function ProblemsSection() {
                 Smart Classroom
               </span>
             </p>
-          </div>
+          </MotionDiv>
         </div>
         <p className="lg:text-[22px] mx-auto">
           Computers are no longer just required to pick up IT skills, but to
-          accomplish any kind <br />
+          accomplish any kind <br className="hidden lg:block" />
           of learning at the school and college level. They are an essential
-          tool when it comes <br /> to{" "}
+          tool when it comes <br className="hidden lg:block" /> to{" "}
           <span className="font-bold">
             research, collaboration and content creation.
           </span>
@@ -68,12 +86,12 @@ export default function ProblemsSection() {
       {/* bg graphics */}
       <div>
         <div className="absolute left-[-40%] lg:top-[750px] lg:left-[-25%] bg-[#3D5CFF] h-[347px] w-[347px] lg:h-[694px] lg:w-[694px] rounded-full opacity-15 blur-[100px]"></div>
-        <div className="absolute top-[825px] left-0 lg:top-[750px] lg:left-[75px] w-[82px] lg:w-fit">
+        <div className="absolute top-[825px] left-0 lg:top-[750px] lg:left-[75px] w-[82px] lg:w-fit animate-spin-slow ">
           <Image src={particle} alt="particle vector" />
         </div>
 
         <div className="absolute left-[320px] top-[590px] lg:left-[80%] lg:top-[375px] bg-[#3D5CFF] h-[347px] w-[347px] lg:h-[694px] lg:w-[694px] rounded-full opacity-15 blur-[100px]"></div>
-        <div className="absolute top-[850px] right-3 lg:top-[850px] lg:right-[9.75rem] w-[65px] lg:w-fit">
+        <div className="absolute top-[850px] right-3 lg:top-[850px] lg:right-[9.75rem] w-[65px] lg:w-fit animate-pulse">
           <Image src={bulb} alt="bulb vector" />
         </div>
       </div>
@@ -101,13 +119,13 @@ export default function ProblemsSection() {
 
       {/* bottom graphics */}
       <div>
-        <div className="absolute bottom-[-34px] left-[3rem] lg:bottom-[-156px] lg:left-[15rem] w-[100px] lg:w-fit">
+        <div className="absolute bottom-[-34px] left-[3rem] lg:bottom-[-156px] lg:left-[15rem] w-[100px] lg:w-fit ">
           <Image src={dotted_pattern} alt="dotted pattern vector" />
         </div>
-        <div className="absolute bottom-[75px] left-[10rem] lg:bottom-[147px] lg:left-[33.5rem] w-[38px] lg:w-fit">
+        <div className="absolute bottom-[75px] left-[10rem] lg:bottom-[147px] lg:left-[33.5rem] w-[38px] lg:w-fit animate-bounce">
           <Image src={pencil} alt="pencil vector" />
         </div>
       </div>
-    </div>
+    </MotionDiv>
   );
 }

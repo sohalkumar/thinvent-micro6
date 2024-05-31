@@ -1,5 +1,5 @@
 import Action from "@/components/Action/Action";
-import BookDemo from "@/components/Action/BookDemo";
+import BookDemo from "@/components/BookDemo/BookDemo";
 import ChooseUs from "@/components/ChooseUs/ChooseUs";
 import Features from "@/components/Features/Features";
 import Footer from "@/components/Footer/Footer";
