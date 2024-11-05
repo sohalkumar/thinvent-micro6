@@ -10,7 +10,6 @@ module.exports = {
       backgroundImage: {
         "hero-bg": "url('/images/hero_graphics.svg')",
         "micro-6-intro": "url('/images/micro_6_intro.png')",
-        "micro-6-specs": "url('/images/micro_6_specs.png')",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
@@ -27,7 +26,7 @@ module.exports = {
         dividerPurple: "#DADAF7",
       },
       padding: {
-        "lg-x": "9.75rem",
+        "lg-x": "10%",
       },
       animation: {
         "spin-slow": "spin 5s linear infinite",

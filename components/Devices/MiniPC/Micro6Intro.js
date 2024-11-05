@@ -1,11 +1,11 @@
-import { MotionDiv } from "../UI/Motion";
-
-export default function Intro() {
+import { MotionDiv } from "../../UI/Motion";
+export default function Micro6Intro() {
   return (
     <MotionDiv
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
+      viewport={{ once: true }}
       className="bg-micro-6-intro bg-cover bg-no-repeat lg:bg-cover px-4 py-[2.75rem] lg:px-lg-x lg:py-[16rem] w-screen"
     >
       <div className="text-start lg:text-center w-fit lg:w-[50%]">
@@ -19,7 +19,7 @@ export default function Intro() {
           An <span className="text-primaryPurple">affordable</span> mini PC
           which <br className="lg:hidden" /> delivers{" "}
           <span className="text-primaryPurple">high performance</span> even on
-          <br className="lg:hhidden" />
+          <br className="lg:hidden" />
           <span className="text-primaryPurple">low power</span>
         </p>
       </div>

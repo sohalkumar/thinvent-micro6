@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 import { caladea, inter } from "./fonts";
 import "./globals.css";
 
@@ -9,10 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${caladea.variable} bg-bgPurple overflow-x-clip`}
-      >
-        {children}
+      <body className={`${inter.variable} ${caladea.variable} bg-bgPurple`}>
+        <Navbar />
+        <div className="relative">{children}</div>
+        <Footer />
       </body>
     </html>
   );

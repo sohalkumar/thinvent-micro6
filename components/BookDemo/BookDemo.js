@@ -7,9 +7,9 @@ export default function BookDemo() {
   return (
     <div className="text-center mx-auto my-[5rem] w-fit relative">
       <h2 className="font-caladea font-bold  text-[2rem] lg:text-[70px] tracking-[-0.5px]">
-        Transform your educational
-        <br /> institution with{" "}
-        <span className="text-primaryPurple">Micro 6</span> today.
+        Transform your educational institution with <br />
+        <span className="text-primaryPurple"> Thinvent Technologies</span>{" "}
+        <br /> today.
       </h2>
       <p className="mt-6 mb-8 text-[1.25rem] lg:text-[24px]">
         Reach out to our Customer representative

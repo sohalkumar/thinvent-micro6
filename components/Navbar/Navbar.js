@@ -5,7 +5,7 @@ import { MotionDiv } from "../UI/Motion";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-[-2%] lg:top-[-5%] flex justify-between items-center bg-bgPurple px-4 py-5 lg:px-lg-x lg:py-[2.75rem] sroll z-[999] opacity-95">
+    <div className="md:sticky top-0 flex justify-between items-center bg-bgPurple px-4 py-5 lg:px-lg-x lg:py-[1rem] sroll z-[999] opacity-95">
       <MotionDiv
         initial={{ x: "-50%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

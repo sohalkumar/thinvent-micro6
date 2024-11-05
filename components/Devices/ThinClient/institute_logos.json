@@ -1,0 +1,82 @@
+[
+    {
+        "name": "ahaguru",
+        "src": "images/institutes/micro5/ahaguru.png",
+        "alt": "ahaguru logo"
+    },
+    {
+        "name": "aidindia",
+        "src": "images/institutes/micro5/aidindia.webp",
+        "alt": "aidindia logo"
+    },
+    {
+        "name": "akal_academy",
+        "src": "images/institutes/micro5/akal_academy.webp",
+        "alt": "akal_academy logo"
+    },
+    {
+        "name": "alokya_institute",
+        "src": "images/institutes/micro5/alokya_institute.png",
+        "alt": "alokya_institute logo"
+    },
+    {
+        "name": "Asset_computer_education",
+        "src": "images/institutes/micro5/Asset_computer_education.png",
+        "alt": "Asset_computer_education logo"
+    },
+    {
+        "name": "HIT",
+        "src": "images/institutes/micro5/HIT.png",
+        "alt": "HIT logo"
+    },
+    {
+        "name": "IDAN_teachers_training_college",
+        "src": "images/institutes/micro5/IDAN_teachers_training_college.jpeg",
+        "alt": "IDAN_teachers_training_college logo"
+    },
+    {
+        "name": "IUAC",
+        "src": "images/institutes/micro5/IUAC.png",
+        "alt": "IUAC logo"
+    },
+    {
+        "name": "JPS_international",
+        "src": "images/institutes/micro5/JPS_international.png",
+        "alt": "JPS_international logo"
+    },
+    {
+        "name": "kalinga-computer-education-athagarh",
+        "src": "images/institutes/micro5/kalinga-computer-education-athagarh.jpg",
+        "alt": "kalinga-computer-education-athagarh logo"
+    },
+    {
+        "name": "microking_institute",
+        "src": "images/institutes/micro5/microking_institute.png",
+        "alt": "microking_institute logo"
+    },
+    {
+        "name": "nagcorp_institute",
+        "src": "images/institutes/micro5/nagcorp_institute.jpg",
+        "alt": "nagcorp_institute logo"
+    },
+    {
+        "name": "royal_computer_and_coaching_institute",
+        "src": "images/institutes/micro5/royal_computer_and_coaching_institute.png",
+        "alt": "royal_computer_and_coaching_institute logo"
+    },
+    {
+        "name": "spectrum_group_of_institutes",
+        "src": "images/institutes/micro5/spectrum_group_of_institutes.png",
+        "alt": "spectrum_group_of_institutes logo"
+    },
+    {
+        "name": "vision_international_school",
+        "src": "images/institutes/micro5/vision_international_school.png",
+        "alt": "vision_international_school logo"
+    },
+    {
+        "name": "Yashmaya_Infotech",
+        "src": "images/institutes/micro5/Yashmaya_Infotech.png",
+        "alt": "Yashmaya_Infotech logo"
+    }
+]

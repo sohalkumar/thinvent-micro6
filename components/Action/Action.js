@@ -24,6 +24,47 @@ export default function Action() {
         </MotionDiv>
       </div>
 
+      <div>
+        <h1 className="text-[2rem] text-center font-caladea font-bold">
+          Buy any 50 computer lab kit from Thinvent, <br />
+          get{" "}
+          <span className="text-primaryPurple underline">
+            free shipping and installation anywhere in India
+          </span>
+          .
+        </h1>
+        <div className="lg:grid lg:grid-cols-2 lg:gap-[5rem] text-[1.25rem] text-center font-semibold py-8">
+          <div className="border-x-8 border-primaryPurple p-3 rounded-xl">
+            <h4 className="text-secondaryPurple lg:text-[1.75rem]">
+              Micro 6 mini PC Computer Lab Kit :{" "}
+              <span className="block text-[1.5rem]">@ Rs XXX</span>
+            </h4>
+            <ul>
+              <li>Monitor</li>
+              <li>M5 - Thin client</li>
+              <li>Keyboard Mouse</li>
+              <li>Neo H</li>
+              <li>Cables</li>
+              <li>Visa Mounting</li>
+            </ul>
+          </div>
+          <div className="border-x-8 border-secondaryPurple mt-8 md:mt-0 p-3 rounded-xl">
+            <h4 className="text-primaryPurple lg:text-[1.75rem]">
+              Micro 5 Pro thin client Computer Lab Kit :{" "}
+              <span className="block text-[1.5rem]">@ Rs XXX</span>
+            </h4>
+            <ul>
+              <li>Monitor</li>
+              <li>M5 - Thin client</li>
+              <li>Keyboard Mouse</li>
+              <li>Neo H</li>
+              <li>Cables</li>
+              <li>Visa Mounting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* bg graphics */}
       <div className="absolute left-[-21px] lg:bottom-[-164px] lg:left-[-62px] w-[100px] lg:w-fit">
         <Image src={dotted_pattern} alt="dotted pattern vector" />

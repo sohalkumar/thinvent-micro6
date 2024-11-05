@@ -13,20 +13,18 @@ export default function Footer() {
         <Image src={icon} alt="Thinvent brand icon" />
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-16 lg:gap-0">
-        <div>
+        <div className="lg:w-[50%]">
           <p className="lg:text-[18px]">
-            Founded in 2007, Thinvent Technologies has continually evolved and{" "}
-            <br /> expanded its presence in the technology sector. The journey
-            began in a<br /> Gurgaon apartment, operating as a one-person entity
-            and initially focusing on
-            <br /> software services, notably tailored solutions for the Indian
-            Railways. Today,
-            <br /> we deliver a broad range of information technology solutions
-            to industries as
-            <br /> varied as transport, government, manufacturing, education and
-            banking.
-            <br />
-            <span className="font-semibold">Be our next success story.</span>
+            We are industry leaders in the design and manufacture of mini PCs,
+            industrial grade monitors and PCs, all-in-one computers and thin
+            client. Our products cater to a wide range of sectors, including
+            healthcare, government, manufacturing, education and banking.
+          </p>
+          <p className="lg:text-[18px]">
+            Our R&D team is focused on creating new tech solutions across
+            industries. In education, our founder and team are committed to
+            designing hardware and software that make computers accessible to
+            every child, no matter where they are.
           </p>
         </div>
 

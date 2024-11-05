@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Text content */}
       <div>
         <h1
-          className="font-caladea font-bold text-[3rem] lg:text-[5rem] tracking-[-0.5px] leading-[94px]"
+          className="font-caladea leading-none font-bold text-[3rem] lg:text-[5rem] tracking-[-0.5px]"
           style={{ fontFamily: "var()" }}
         >
           Making computers <br /> accessible to every child
@@ -31,7 +31,8 @@ export default function Hero() {
       {/* Micro 6 image */}
       <MotionDiv
         initial={{ opacity: 0, scale: 0 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        // whileInView={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         whileHover={{
           scale: 1.1,
@@ -39,6 +40,7 @@ export default function Hero() {
             duration: 0.3,
           },
         }}
+        viewport={{ once: true }}
         className="lg:absolute lg:top-[13rem] lg:right-[7rem] lg:w-[40%]"
       >
         <Image src={hero_image} alt="Hero 6 image" />
